@@ -23,6 +23,7 @@ body, .app {
 
 .list-books-content {
   padding: 0 0 80px;
+  background: #fff5ef;
   flex: 1;
 }
 
