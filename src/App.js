@@ -4,8 +4,6 @@ import * as BooksAPI from './BooksAPI'
 import './App.css'
 import AddBooks from './components/AddBooks';
 import HomeBooks from './components/HomeBooks';
-import BookDetails from './components/BookDetails';
-
 
 class BooksApp extends React.Component {
 
@@ -18,14 +16,24 @@ class BooksApp extends React.Component {
     }
   }
 
-
-  //Update State Book
-  defineState = (book, shelf) => {
+  /**
+  * @description Update status book (currentlyReading, wantToRead, read)
+  * @param {object} book - Book selected data
+  * @param {string} shelf - New status to book (currentlyReading, wantToRead, read)
+  * @returns {function} fetchAll
+  */
+  defineStatus = (book, shelf) => {
     BooksAPI.update(book, shelf)
     .then(() => this.fetchAll())
   }
 
-  //Fetch pure data API
+  
+  /**
+  * @description Update status book (currentlyReading, wantToRead, read)
+  * @param {object} book - Book selected data
+  * @param {string} shelf - New status to book (currentlyReading, wantToRead, read)
+  * @returns {function} fetchAll
+  */
   fetchAll = () => {
     BooksAPI.getAll()
     .then(res => {
@@ -34,7 +42,15 @@ class BooksApp extends React.Component {
     .catch(error => console.log(error))
   }
 
-  //Separate state pure data API
+  /**
+  * @description Separate status of books in arrays
+  * @param {object} book - Books data
+  * @returns {object} New state books: 
+      @param {array} currentlyReading - All books in the status currentlyReading
+      @param {array} wantToRead - All books in the status wantToRead
+      @param {array} read - All books in the status read
+      @param {array} all - All books in the status currentlyReading, wantToRead and read
+  */
   separateBooks = (books) => {
     const currentlyReading = books.filter(book => book.shelf==='currentlyReading');
     const wantToRead = books.filter(book => book.shelf==='wantToRead');
@@ -45,34 +61,30 @@ class BooksApp extends React.Component {
   }
 
 
-
   componentDidMount(){
     this.fetchAll();
   }
 
   render() {
-    // console.log('Estado', this.state)
-    const {state: { books }, defineState, separateBooks} = this
-    
+    const { state: { books }, defineStatus, separateBooks } = this
     return (
       <div className="app">
         
         <Route exact path='/search' render={() =>(
           <AddBooks 
-            defineState={defineState} 
+            defineStatus={defineStatus} 
             booksUser={books} 
           />
         )}/>
 
         <Route exact path='/' render={() => (
           <HomeBooks 
-            defineState={defineState}
+            defineStatus={defineStatus}
             separateBooks={separateBooks}  
             booksUser={books}  
           />
         )}/>
 
-        <Route exact path='/book/:id' component={ (props) =>  <BookDetails {...props} />  }/>
       </div>
     )
   }

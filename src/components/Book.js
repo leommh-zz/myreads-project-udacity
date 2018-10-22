@@ -1,29 +1,31 @@
 import React, { Component } from 'react';
-
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { Card, CardActionArea, CardActions, Chip, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
 import BookDrawer from './BookDrawer';
 import MapChips from './MapChips';
+
 
 const styles = {
     card: {
         display: 'flex',
     },
-    CardActionArea: {
+    cardActionArea: {
         display: 'flex',
-        maxWitdh: 300
     },
     details: {
         display: 'flex',
         flexDirection: 'column',
     },
     content: {
-        flex: '1 0 auto',
+        flex: '1',
+        flexWrap: 'wrap',
     },
     cover: {
         width: 128,
         height: 193,
+    },
+    typography: {
+        maxWidth: 300
     },
 };
 
@@ -40,17 +42,17 @@ class Book extends Component{
     };
 
     render(){
-        const { props: { data, data: {title, categories, authors, shelf}, defineState, classes}, state: { drawer }, toggleDrawer, mapChips } = this;
+        const { props: { data, data: {title, categories, authors}, defineStatus, classes}, state: { drawer }, toggleDrawer } = this;
         const imageDefault='https://openclipart.org/image/2400px/svg_to_png/211479/Simple-Image-Not-Found-Icon.png';
         const thumbnail = data.imageLinks ? data.imageLinks.thumbnail : imageDefault;
 
         return (
             <li>
                 <Card className={classes.card}>
-                    <CardActionArea className={classes.CardActionArea} onClick={ this.toggleDrawer('bottom', true) } >
+                    <CardActionArea className={classes.cardActionArea} onClick={ this.toggleDrawer('bottom', true) } >
                         <div className={classes.details}>
                             <CardContent className={classes.content}>
-                                <Typography component="h1" variant="h6">
+                                <Typography className={classes.typography} variant="h6" noWrap={true}>
                                     {title}
                                 </Typography>
                                 <MapChips items={authors} name='Authors'/>
@@ -65,7 +67,7 @@ class Book extends Component{
                     </CardActionArea>
                 </Card>
 
-                <BookDrawer book={data} toggleDrawer={toggleDrawer} stateDrawer={drawer} />
+                <BookDrawer book={data} toggleDrawer={toggleDrawer} stateDrawer={drawer} defineStatus={defineStatus} />
             </li>
         );
     }

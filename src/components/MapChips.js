@@ -1,21 +1,20 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
-import Chips from './Chips';
+import { Typography, Grid } from '@material-ui/core';
+import { Chips } from './Chips';
 
-const MapChips = props => {
-    const { items, name } = props;
-
-    return items ? (
-        <div>
-            <Typography variant="subtitle1" color="textSecondary"> 
-                { name }
-            </Typography>
-            <Chips items={items} /> 
-        </div>
+const MapChips = ({ items, name }) => (
+    items ? (
+        <Grid item>
+            <Grid container>
+                <Typography variant="subtitle1" color="textSecondary"> 
+                    { name }
+                </Typography> 
+                <Chips items={ items } /> 
+            </Grid>
+        </Grid>
+    ) : (
+        false
     )
-    : (
-        ''
-    )
-}
+)
 
 export default MapChips;

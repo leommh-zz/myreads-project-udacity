@@ -1,9 +1,28 @@
 import React from 'react'
-import { Chip } from '@material-ui/core';
+import { Chip, Grid } from '@material-ui/core';
 
-const Chips = props => {
-    const { items } = props;
-    return items ? items.map( item => <Chip label={item}/> ) : ''
-}
+export const Chips = ({ items }) => (
+    items ? (
+        <Grid container direction="row" spacing={8}>
+            { items.map( item => (
+                <Grid item key={ item }>
+                    <Chip label={ item }/>
+                </Grid>
+            )) }
+        </Grid>
+    ) : (
+        false
+    )
+)
 
-export default Chips;
+export const ChipItem = ({ item }) => (
+    item ? (
+        <Grid>
+            <Chip label={ item }/>
+        </Grid>
+    ) : (
+        <Grid>
+            <Chip label='None'/>
+        </Grid>
+    )
+)

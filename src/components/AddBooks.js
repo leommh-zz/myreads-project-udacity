@@ -7,35 +7,58 @@ import * as BooksAPI from '../BooksAPI';
 class AddBooks extends Component{
     state = ({
         booksSearch: {},
-        empty: false
+        query: ''
     })
 
+    /**
+    * @description Search books
+    * @param {string} query - Input search value
+    * @returns {function} FetchQuery
+    */
     search = (query) => {
         this.fetchQuery(query.target.value.trim())
     }
 
+    /**
+    * @description Utilize API Search books
+    * @param {string} query - Input search value
+    * @returns {function} Response API books search
+    */
     fetchQuery = (query) => {
         BooksAPI.search(query)
-        .then(res => this.separateBooks(res))
-        .catch(() => this.setState( () => ({ empty: true }) ))
+        .then(books => this.booksAddShelf(books, query))
+        .catch((error) => console.log(error))
     }
 
-    separateBooks = (books) => {
+    /**
+    * @description Filter books - shelf
+    * @param {array} books - Books fetchQuery response
+    * @returns {array} New state booksSearch:
+    */
+    booksAddShelf = (books, query) => {
         const { booksUser } = this.props;
-        console.log(this.props);
-        // const separatedBooks = books.map(book => booksUser.filter( bookUser => ( bookUser.id !== book.id )));
+        const booksSearch = books.filter( book => booksUser.all.map( bookUser =>
+            book.id === bookUser.id ? ( 
+                book.shelf = bookUser.shelf 
+            ) : (
+                book
+            )
+        ));
+        this.setState( () => ({ booksSearch, query }));
+    }
 
-        
-        // console.log('Books -> AddBook: ', separatedBooks);
-        this.setState( () => ({ booksSearch: books, empty: false }) )
+    componentWillReceiveProps(){
+        const { state: { query }, fetchQuery  } = this;
+        fetchQuery(query);
     }
 
     render(){  
-        const { search, state: { booksSearch, empty }, props: { defineState }}  = this;
+        console.log('renderizou')
+        const { state: { booksSearch }, props: { defineStatus }, search }  = this;
         return(
             <div>
-                <SearchInput search={search}  />
-                <BookCase type='' books={booksSearch} empty={empty} defineState={defineState} />
+                <SearchInput search={ search }  />
+                <BookCase books={ booksSearch } defineStatus={ defineStatus } />
             </div>
         );
     }
