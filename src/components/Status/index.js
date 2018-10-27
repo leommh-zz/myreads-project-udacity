@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FormControl, Typography, Select, MenuItem } from '@material-ui/core';
- 
+import Style from './Style';
 
-const StatusInput = ({defineStatus, book, shelf}) => (
-
-    <FormControl>
-        <Typography variant="subtitle1" color="textSecondary"> 
+const Status = ({ defineStatus, book, shelf }) => (
+    <FormControl style={Style.status}>
+        <Typography variant='subtitle1' style={Style.title}> 
             Status
         </Typography> 
         <Select
@@ -20,4 +19,4 @@ const StatusInput = ({defineStatus, book, shelf}) => (
     </FormControl>
 )
 
-export default StatusInput;
+export default Status;
