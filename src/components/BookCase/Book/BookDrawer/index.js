@@ -1,5 +1,6 @@
 import React from 'react';
 import { Drawer, Grid, Typography, Button } from '@material-ui/core';
+import ReactStars from 'react-stars';
 import ArrowBack from '@material-ui/icons/ArrowBack';
 import MultiChips from '../../../MultiChips';
 import Status from  '../../../Status';
@@ -7,7 +8,7 @@ import BookImage from '../BookImage';
 import If from '../../../If';
 import Style from './Style';
 
-const BookDrawer = ({ data, data: {title, description, categories, authors, shelf}, toggleDrawer, stateDrawer, defineStatus }) => (
+const BookDrawer = ({ data, data: {title, description, categories, authors, shelf, averageRating}, toggleDrawer, stateDrawer, defineStatus }) => (
     <Drawer anchor="right" open={stateDrawer} onClose={toggleDrawer(false)}>
         <Grid tabIndex={0} style={Style.main}>
             <Grid container direction="column" spacing={8}>
@@ -22,6 +23,13 @@ const BookDrawer = ({ data, data: {title, description, categories, authors, shel
                     <Typography variant="h6" align="justify" style={Style.title}>
                         {title}
                     </Typography>
+                    <ReactStars
+                        value={averageRating}
+                        count={5}
+                        edit={false}
+                        size={25}
+                        color2={'#ffd700'} 
+                    />
                 </Grid>   
                 
                 {/* Image Grid */}
@@ -32,12 +40,14 @@ const BookDrawer = ({ data, data: {title, description, categories, authors, shel
 
                 {/* Actions Grid */}
                 <Grid item>
+
                     <Status defineStatus={defineStatus} book={data} shelf={shelf} />
                 </Grid>
 
                 {/* Information Grid */}
                 <Grid item>
                     <Grid container direction="column" spacing={16}>
+
                         <MultiChips items={authors} name="Authors"/>
                         <MultiChips items={categories} name="Categories"/>  
                         <Grid item>

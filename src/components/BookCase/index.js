@@ -27,8 +27,8 @@ const BookCase = ({ title='', books, defineStatus, loading=false }) => (
                 { 
                     loading === false && books !== undefined ?
                     books.length > 0 && books.map((book) => (
-                        <Grid item>
-                            <Book key={book.id} data={book} defineStatus={defineStatus} />
+                        <Grid key={book.id} item>
+                            <Book data={book} defineStatus={defineStatus} />
                         </Grid>
                     ))
                     :

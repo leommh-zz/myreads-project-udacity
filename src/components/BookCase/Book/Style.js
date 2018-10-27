@@ -7,7 +7,7 @@ const Style = {
         flexDirection: 'column',
     },
     content: {
-        flex: '1',
+        flex: 1,
         flexWrap: 'wrap',
     },
     title: {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardActionArea, CardContent, Grid, Typography } from '@material-ui/core';
+import ReactStars from 'react-stars';
 import BookDrawer from './BookDrawer';
 import MultiChips from '../../MultiChips';
 import BookImage from './BookImage';
@@ -16,8 +17,7 @@ class Book extends Component{
     };
 
     render(){
-        const { props: {data, data: {title, categories}, defineStatus}, state: { drawer }, toggleDrawer } = this;
-
+        const { props: {data, data: {title, categories, averageRating}, defineStatus}, state: { drawer }, toggleDrawer } = this;
         return (
             <li>
                 <Card style={Style.card}>
@@ -34,6 +34,13 @@ class Book extends Component{
                                     <Typography style={Style.title} variant="h6" noWrap={true}>
                                         {title}
                                     </Typography>
+                                    <ReactStars
+                                        value={averageRating}
+                                        count={5}
+                                        edit={false}
+                                        size={25}
+                                        color2={'#ffd700'} 
+                                    />
                                     <MultiChips items={categories} name="Categories"/>
                                 </CardContent>
                             </Grid>

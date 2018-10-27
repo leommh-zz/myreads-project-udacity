@@ -8,7 +8,7 @@ const MultiChips = ({ items, name }) =>{
     return(
         // Tests whether items exist
         <If test={items}> 
-            <Grid item>
+            <Grid container item>
                 <Typography variant="subtitle1" style={Style.typography}> 
                     {name}
                 </Typography> 
