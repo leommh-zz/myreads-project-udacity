@@ -1,14 +1,16 @@
 import React from 'react';
 import { Grid, TextField, Paper } from '@material-ui/core';
+import {DebounceInput} from 'react-debounce-input';
 import Style from './Style';
 
 const SearchInput = ({ search }) => (
-    <Grid item>
+    <Grid item style={Style.grid}>
         <Paper style={Style.input} elevation={1}>
-            <TextField
-                id="search"
-                label="Search"
-                onChange={(query) => search(query.target.value)}
+            <DebounceInput
+                debounceTimeout={500}
+                placeholder="Search"
+                style={Style.input}
+                onChange={query => search(query.target.value)} 
             />
         </Paper>
     </Grid>

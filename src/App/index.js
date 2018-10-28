@@ -2,7 +2,6 @@ import React from 'react'
 import { Route } from 'react-router-dom';
 import * as BooksAPI from '../BooksAPI';
 import {Grid} from '@material-ui/core';
-import {debounce} from 'throttle-debounce';
 import Header from '../components/Header';
 import BookAdd from '../pages/BookAdd';
 import Home from '../pages/Home';
@@ -78,34 +77,22 @@ class BooksApp extends React.Component {
   /**
   * @description - Search the books
   * @param {string} query - Input search value
-  * @returns {function} - If the parameter is empty it will execute the function 
-  * fetchNone clean the books and the search screen, otherwise it will execute the 
-  * fetchSearch function passing the parameter 
-  */
-  search = (query) => {
-    this.setState({searchQuery: query, loading: true}, () => {
-      console.log(this.state.searchQuery);
-      const fetchSearch = debounce(500, this.fetchSearch);
-      const fetchNone = debounce(500, () => this.setState({ booksSearch: [], loading: false }))
-      query === '' ? (
-        fetchNone()
-      ) : (
-        fetchSearch(query)
-      )
-    });
-  }
-
-  /**
-    * @description - Use API Search books
-    * @param {string} searchQuery - Search query value
-    * @returns {function} - If the API succeeds in fetching the query then it will call the 
+  * @returns {function} - If the API succeeds in fetching the query then it will call the 
     * booksAddShelf function and pass the purely searched books, otherwise it will display 
     * an error message updating the state
   */
-  fetchSearch = (searchQuery) => {
-    BooksAPI.search(searchQuery)
-    .then(booksPure => this.booksAddShelf(booksPure))
-    .catch(() => this.setState({ booksSearch: {}, title: 'Books not found!', loading: false }))  
+  search = (query) => {
+    this.setState({searchQuery: query, loading: true}, () => {
+
+      query.length > 0 ? (
+        BooksAPI.search(this.state.searchQuery)
+        .then(booksPure => this.booksAddShelf(booksPure))
+        .catch(() => this.setState({ booksSearch: {}, title: 'Books not found!', loading: false })) 
+      ) : (
+        this.setState({ booksSearch: {}, title: '', loading: false })
+      )
+
+    });
   }
 
   /**

@@ -4,7 +4,8 @@ const Style = {
         backgroundColor: '#000',
     }, 
     title: {
-        fontSize: 50
+        fontSize: 50,
+        color: '#fff',
     }
 }
 

@@ -12,11 +12,17 @@ const BookAdd = ({ defineStatus, loading, title, booksSearch, search }) => (
         direction="column" 
         justify="center"
         alignItems="center" 
-        spacing={32}
     >
-        <ButtonBack />
-        <SearchInput search={search}  />
-        <BookCase title={title} books={booksSearch} defineStatus={defineStatus} loading={loading} /> 
+        <Grid item>
+            <ButtonBack />
+        </Grid>
+        <Grid item>
+            <SearchInput search={search}  />
+        </Grid>
+        <Grid item>
+            <BookCase title={title} books={booksSearch} defineStatus={defineStatus} loading={loading} /> 
+        </Grid>
+    
     </Grid>
 )
 
