@@ -24,6 +24,7 @@ const BookCase = ({ title='', books, defineStatus, loading = false }) => (
                 <Grid item style={Style.books}>
                     <Grid container style={Style.booksGrid} spacing={8}>
                         {loading === false && books !== undefined && (
+                            console.log(books),
                             books.length > 0 && books.map((book) => (
                                 <Grid key={book.id} item>
                                     <Book data={book} defineStatus={defineStatus} />
