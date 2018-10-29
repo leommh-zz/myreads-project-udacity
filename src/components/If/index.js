@@ -4,12 +4,8 @@
  * @var {component} children - Child component    
  * @returns - If the test is valid it will return the component, else it will return false
  */
-const If = ({ test, children }) => {
-    if (test) {
-        return children;
-    }else{
-        return false;
-    }
-}
+const If = ({ test, children }) => (
+    test ? children : false
+);
 
 export default If;
