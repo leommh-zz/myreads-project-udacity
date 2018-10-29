@@ -1,5 +1,3 @@
-import { nominalTypeHack } from "prop-types";
-
 const Style = {
     main: {
         padding: 20,
