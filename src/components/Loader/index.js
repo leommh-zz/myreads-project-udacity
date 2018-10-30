@@ -1,6 +1,6 @@
 import React from 'react';
 import {CircularProgress, Grid} from '@material-ui/core';
-import Style from './Style';
+import style from './style';
 
 const Loader = () => (
     <Grid
@@ -9,10 +9,10 @@ const Loader = () => (
         direction="row"
         justify="center"
         alignItems="center"
-        style={Style.main}
+        style={style.main}
     >  
         <Grid item>
-            <CircularProgress style={Style.loading} thickness={7} />
+            <CircularProgress style={style.loading} thickness={7} />
         </Grid>
     </Grid>  
 )

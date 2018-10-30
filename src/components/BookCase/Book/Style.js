@@ -1,7 +1,7 @@
-const Style = {
+const style = {
     card: {
         backgroundColor: '#12071d',
-        color: '#fff'
+        color: '#fff',
     },
     details: {
         flexDirection: 'column',
@@ -16,4 +16,4 @@ const Style = {
     },
 };
 
-export default Style;
+export default style;

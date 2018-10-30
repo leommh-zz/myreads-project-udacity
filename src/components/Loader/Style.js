@@ -1,4 +1,4 @@
-const Style = {
+const style = {
     main: {
         flex: 1
     }, 
@@ -7,4 +7,4 @@ const Style = {
     }
 }
 
-export default Style;
+export default style;

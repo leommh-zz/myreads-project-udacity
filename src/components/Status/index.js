@@ -1,10 +1,10 @@
 import React from 'react';
 import { FormControl, Typography, Select, MenuItem } from '@material-ui/core';
-import Style from './Style';
+import style from './style';
 
 const Status = ({ defineStatus, book, shelf }) => (
-    <FormControl style={Style.status}>
-        <Typography variant='subtitle1' style={Style.title}> 
+    <FormControl style={style.status}>
+        <Typography variant='subtitle1' style={style.title}> 
             Status
         </Typography> 
         <Select

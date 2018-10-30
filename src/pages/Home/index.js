@@ -5,11 +5,11 @@ import Add from '@material-ui/icons/Add';
 import BookCase from '../../components/BookCase';
 import Loader from '../../components/Loader';
 import If from '../../components/If';
-import Style from './Style';
+import style from './style';
 
 const Home = ({ booksUser, defineStatus, loading }) => (
 
-    <Grid container style={Style.main}>
+    <Grid container style={style.main}>
         {/* Loading Screen */}
         <If test={loading === true}>
           <Loader />
@@ -17,15 +17,15 @@ const Home = ({ booksUser, defineStatus, loading }) => (
 
         {/* Books Screen */}
         <If test={loading === false}>
-            <Grid item style={Style.bookCase}>
+            <Grid item style={style.bookCase}>
                 <BookCase title="Currently Reading" books={booksUser.currentlyReading} empty={false} defineStatus={defineStatus} />
                 <BookCase title="Want to Read" books={booksUser.wantToRead} empty={false} defineStatus={defineStatus} />
                 <BookCase title="Read" books={booksUser.read} empty={false} defineStatus={defineStatus} />
             </Grid>
 
-            <Grid item container justify="flex-end" style={Style.openSearch}>
+            <Grid item container justify="flex-end" style={style.openSearch}>
                 <Link to="/search" className="add-contact">
-                    <Button variant="fab" aria-label="Close" style={Style.add}>
+                    <Button variant="fab" aria-label="Close" style={style.add}>
                         <Add />
                     </Button>
                 </Link>

@@ -1,4 +1,4 @@
-const Style = {
+const style = {
     main: {
         backgroundColor: '#605872',
         padding: 20
@@ -18,4 +18,4 @@ const Style = {
     },
 }
 
-export default Style;
+export default style;

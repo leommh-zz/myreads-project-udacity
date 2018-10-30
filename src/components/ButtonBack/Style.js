@@ -1,4 +1,4 @@
-const Style = {
+const style = {
     main: {
         padding: 20,
     },
@@ -12,4 +12,4 @@ const Style = {
     },
 }
 
-export default Style;
+export default style;

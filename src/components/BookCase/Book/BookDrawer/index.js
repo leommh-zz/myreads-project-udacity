@@ -6,21 +6,21 @@ import MultiChips from '../../../MultiChips';
 import Status from  '../../../Status';
 import BookImage from '../BookImage';
 import If from '../../../If';
-import Style from './Style';
+import style from './style';
 
 const BookDrawer = ({ data, data: {title, description, categories, authors, shelf, averageRating}, toggleDrawer, stateDrawer, defineStatus }) => (
     <Drawer anchor="right" open={stateDrawer} onClose={toggleDrawer(false)}>
-        <Grid tabIndex={0} style={Style.main}>
+        <Grid tabIndex={0} style={style.main}>
             <Grid container direction="column" spacing={8}>
 
                 {/* Header Grid */}
                 <Grid item>
-                    <Button variant="fab" aria-label="Close" onClick={toggleDrawer(false)} style={Style.close}>
+                    <Button variant="fab" aria-label="Close" onClick={toggleDrawer(false)} style={style.close}>
                         <ArrowBack />
                     </Button>
                 </Grid>
                 <Grid item>
-                    <Typography variant="h6" align="justify" style={Style.title}>
+                    <Typography variant="h6" align="justify" style={style.title}>
                         {title}
                     </Typography>
                     <ReactStars
@@ -52,7 +52,7 @@ const BookDrawer = ({ data, data: {title, description, categories, authors, shel
                         <MultiChips items={categories} name="Categories"/>  
                         <Grid item>
                             <If test={description}>
-                                <Typography variant="subtitle1" align="justify" style={Style.description}>
+                                <Typography variant="subtitle1" align="justify" style={style.description}>
                                     <b>Description: </b> {description} 
                                 </Typography>
                             </If>

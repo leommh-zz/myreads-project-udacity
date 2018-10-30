@@ -1,4 +1,4 @@
-const Style = {
+const style = {
     typography: {
         color: '#c8a3ff'
     },
@@ -7,4 +7,4 @@ const Style = {
     }
 }
 
-export default Style;
+export default style;

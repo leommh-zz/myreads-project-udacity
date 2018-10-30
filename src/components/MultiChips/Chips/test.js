@@ -13,19 +13,19 @@ describe('[Components] MapChips and ItemChip', () => {
         "item"
     ];
 
-    const Style = {
+    const style = {
         chip: {
             color: "#fff",
         },
     };
 
     it('Display MapChips Component with props', () => {
-        const wrapper = shallow(<MapChips items={items} Style={Style} />);
+        const wrapper = shallow(<MapChips items={items} style={style} />);
         expect(wrapper).toMatchSnapshot();
     });
     
     it('Display ItemChip Component with props', () => {
-        const wrapper = shallow(<ItemChip item={item} Style={Style} />);
+        const wrapper = shallow(<ItemChip item={item} style={style} />);
         expect(wrapper).toMatchSnapshot();
     });
 

@@ -4,17 +4,17 @@ exports[`[Components] MapChips and ItemChip Display ItemChip Component with prop
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    Style={
+    item={
+        Array [
+            "item",
+          ]
+    }
+    style={
         Object {
             "chip": Object {
               "color": "#fff",
             },
           }
-    }
-    item={
-        Array [
-            "item",
-          ]
     }
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -125,18 +125,18 @@ exports[`[Components] MapChips and ItemChip Display MapChips Component with prop
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    Style={
-        Object {
-            "chip": Object {
-              "color": "#fff",
-            },
-          }
-    }
     items={
         Array [
             "item1",
             "item2",
           ]
+    }
+    style={
+        Object {
+            "chip": Object {
+              "color": "#fff",
+            },
+          }
     }
 />,
   Symbol(enzyme.__renderer__): Object {

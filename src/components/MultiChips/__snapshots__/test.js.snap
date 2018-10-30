@@ -40,7 +40,13 @@ ShallowWrapper {
                 title1
         </WithStyles(Typography)>
         <Unknown
-                Style={
+                items={
+                        Array [
+                                "item1",
+                                "item2",
+                              ]
+                }
+                style={
                         Object {
                                 "chip": Object {
                                   "background": "#bfd3ff",
@@ -49,12 +55,6 @@ ShallowWrapper {
                                   "color": "#c8a3ff",
                                 },
                               }
-                }
-                items={
-                        Array [
-                                "item1",
-                                "item2",
-                              ]
                 }
         />
 </WithStyles(Grid)>,
@@ -81,7 +81,13 @@ ShallowWrapper {
             title1
 </WithStyles(Typography)>,
           <Unknown
-            Style={
+            items={
+                        Array [
+                                    "item1",
+                                    "item2",
+                                  ]
+            }
+            style={
                         Object {
                                     "chip": Object {
                                       "background": "#bfd3ff",
@@ -90,12 +96,6 @@ ShallowWrapper {
                                       "color": "#c8a3ff",
                                     },
                                   }
-            }
-            items={
-                        Array [
-                                    "item1",
-                                    "item2",
-                                  ]
             }
 />,
         ],
@@ -124,7 +124,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "Style": Object {
+            "items": Array [
+              "item1",
+              "item2",
+            ],
+            "style": Object {
               "chip": Object {
                 "background": "#bfd3ff",
               },
@@ -132,10 +136,6 @@ ShallowWrapper {
                 "color": "#c8a3ff",
               },
             },
-            "items": Array [
-              "item1",
-              "item2",
-            ],
           },
           "ref": null,
           "rendered": null,
@@ -167,7 +167,13 @@ ShallowWrapper {
                     title1
           </WithStyles(Typography)>
           <Unknown
-                    Style={
+                    items={
+                              Array [
+                                        "item1",
+                                        "item2",
+                                      ]
+                    }
+                    style={
                               Object {
                                         "chip": Object {
                                           "background": "#bfd3ff",
@@ -176,12 +182,6 @@ ShallowWrapper {
                                           "color": "#c8a3ff",
                                         },
                                       }
-                    }
-                    items={
-                              Array [
-                                        "item1",
-                                        "item2",
-                                      ]
                     }
           />
 </WithStyles(Grid)>,
@@ -208,7 +208,13 @@ ShallowWrapper {
               title1
 </WithStyles(Typography)>,
             <Unknown
-              Style={
+              items={
+                            Array [
+                                          "item1",
+                                          "item2",
+                                        ]
+              }
+              style={
                             Object {
                                           "chip": Object {
                                             "background": "#bfd3ff",
@@ -217,12 +223,6 @@ ShallowWrapper {
                                             "color": "#c8a3ff",
                                           },
                                         }
-              }
-              items={
-                            Array [
-                                          "item1",
-                                          "item2",
-                                        ]
               }
 />,
           ],
@@ -251,7 +251,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "Style": Object {
+              "items": Array [
+                "item1",
+                "item2",
+              ],
+              "style": Object {
                 "chip": Object {
                   "background": "#bfd3ff",
                 },
@@ -259,10 +263,6 @@ ShallowWrapper {
                   "color": "#c8a3ff",
                 },
               },
-              "items": Array [
-                "item1",
-                "item2",
-              ],
             },
             "ref": null,
             "rendered": null,

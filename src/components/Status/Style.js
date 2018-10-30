@@ -1,4 +1,4 @@
-const Style = {
+const style = {
     status:{
         backgroundColor: '#c8a3ff',
         padding: 15,
@@ -8,4 +8,4 @@ const Style = {
     },
 }
 
-export default Style;
+export default style;

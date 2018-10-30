@@ -1,4 +1,4 @@
-const Style = {
+const style = {
     paper: {
         backgroundColor: 'rgb(134, 108, 161)',
         borderRadius: 20,
@@ -25,4 +25,4 @@ const Style = {
     },
 }
 
-export default Style;
+export default style;

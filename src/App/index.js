@@ -5,7 +5,7 @@ import {Grid} from '@material-ui/core';
 import Header from '../components/Header';
 import BookAdd from '../pages/BookAdd';
 import Home from '../pages/Home';
-import Style from './Style';
+import style from './style';
 
 class BooksApp extends React.Component {
 
@@ -37,10 +37,10 @@ class BooksApp extends React.Component {
   * @returns {function} - Execute the function fetchAll and performs the search again to 
   * refresh the updated book in the search screen
   */
-  defineStatus = (book, shelf) => {
-    BooksAPI.update(book, shelf)
-    .then(() => this.fetchAll())
-    .then(() => this.search(this.state.searchQuery))
+  defineStatus = async (book, shelf) => {
+    await BooksAPI.update(book, shelf);
+    await this.fetchAll();
+    this.search(this.state.searchQuery);
   }
   
   /**
@@ -65,6 +65,16 @@ class BooksApp extends React.Component {
       @param {array} read - All books in the status read
       @param {array} all - All books in the status currentlyReading, wantToRead and read
   */
+
+  /**
+   * Sugestion Review Failed ->
+   *  const filter = books => shelf => books.shelf(b => b.shelf === shelf)
+      const filterBy = filter(books)
+      const wantToRead = filterBy('wantToRead')
+      const currentlyReading = filterBy('currentlyReading') 
+      const read = filterBy('read')
+   */
+
   separateBooks = (books) => {
     const currentlyReading = books.filter(book => book.shelf==='currentlyReading');
     const wantToRead = books.filter(book => book.shelf==='wantToRead');
@@ -123,7 +133,7 @@ class BooksApp extends React.Component {
   render() {
     const { state: { books, booksSearch, loading, title }, defineStatus, separateBooks, search } = this
     return (
-      <Grid container direction="column" alignItems="center" style={Style.main}>
+      <Grid container direction="column" alignItems="center" style={style.main}>
         <Grid item>
           <Header />
         </Grid>

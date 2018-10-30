@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core';
 import SearchInput from '../../components/SearchInput';
 import ButtonBack from '../../components/ButtonBack';
 import BookCase from '../../components/BookCase';
-import Style from './Style';
+import style from './style';
 
 class BookAdd extends Component{
     /**
@@ -21,7 +21,7 @@ class BookAdd extends Component{
         return (
             <Grid 
             container 
-            style={Style.main}  
+            style={style.main}  
             direction="column" 
             justify="center"
             alignItems="center" 
