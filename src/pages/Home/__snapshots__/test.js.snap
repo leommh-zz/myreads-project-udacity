@@ -1,0 +1,698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] Home Display Home Component with props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home
+    booksUser={
+        Array [
+            Object {
+              "authors": Array [
+                "Leonardo Morini",
+              ],
+              "averageRating": 2,
+              "categories": Array [
+                "action",
+              ],
+              "description": "This book and the table",
+              "shelf": "",
+              "title": "Title Book",
+            },
+          ]
+    }
+    defineStatus={[Function]}
+    loading={false}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <If
+          test={false}
+>
+          <Loader />
+</If>,
+        <If
+          test={true}
+>
+          <WithStyles(Grid)
+                    item={true}
+                    style={undefined}
+          >
+                    <BookCase
+                              books={undefined}
+                              defineStatus={[Function]}
+                              empty={false}
+                              title="Currently Reading"
+                    />
+                    <BookCase
+                              books={undefined}
+                              defineStatus={[Function]}
+                              empty={false}
+                              title="Want to Read"
+                    />
+                    <BookCase
+                              books={undefined}
+                              defineStatus={[Function]}
+                              empty={false}
+                              title="Read"
+                    />
+          </WithStyles(Grid)>
+          <WithStyles(Grid)
+                    container={true}
+                    item={true}
+                    justify="flex-end"
+                    style={undefined}
+          >
+                    <Link
+                              className="add-contact"
+                              replace={false}
+                              to="/search"
+                    >
+                              <WithStyles(Button)
+                                        aria-label="Close"
+                                        style={
+                                                  Object {
+                                                            "backgroundColor": "#fff",
+                                                            "bottom": 20,
+                                                            "position": "fixed",
+                                                            "right": 20,
+                                                          }
+                                        }
+                                        variant="fab"
+                              >
+                                        <pure(AddIcon) />
+                              </WithStyles(Button)>
+                    </Link>
+          </WithStyles(Grid)>
+</If>,
+      ],
+      "container": true,
+      "style": Object {
+        "backgroundColor": "#605872",
+        "padding": 20,
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <Loader />,
+          "test": false,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Grid)
+              item={true}
+              style={undefined}
+>
+              <BookCase
+                            books={undefined}
+                            defineStatus={[Function]}
+                            empty={false}
+                            title="Currently Reading"
+              />
+              <BookCase
+                            books={undefined}
+                            defineStatus={[Function]}
+                            empty={false}
+                            title="Want to Read"
+              />
+              <BookCase
+                            books={undefined}
+                            defineStatus={[Function]}
+                            empty={false}
+                            title="Read"
+              />
+</WithStyles(Grid)>,
+            <WithStyles(Grid)
+              container={true}
+              item={true}
+              justify="flex-end"
+              style={undefined}
+>
+              <Link
+                            className="add-contact"
+                            replace={false}
+                            to="/search"
+              >
+                            <WithStyles(Button)
+                                          aria-label="Close"
+                                          style={
+                                                        Object {
+                                                                      "backgroundColor": "#fff",
+                                                                      "bottom": 20,
+                                                                      "position": "fixed",
+                                                                      "right": 20,
+                                                                    }
+                                          }
+                                          variant="fab"
+                            >
+                                          <pure(AddIcon) />
+                            </WithStyles(Button)>
+              </Link>
+</WithStyles(Grid)>,
+          ],
+          "test": true,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <BookCase
+                  books={undefined}
+                  defineStatus={[Function]}
+                  empty={false}
+                  title="Currently Reading"
+/>,
+                <BookCase
+                  books={undefined}
+                  defineStatus={[Function]}
+                  empty={false}
+                  title="Want to Read"
+/>,
+                <BookCase
+                  books={undefined}
+                  defineStatus={[Function]}
+                  empty={false}
+                  title="Read"
+/>,
+              ],
+              "item": true,
+              "style": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "books": undefined,
+                  "defineStatus": [Function],
+                  "empty": false,
+                  "title": "Currently Reading",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "books": undefined,
+                  "defineStatus": [Function],
+                  "empty": false,
+                  "title": "Want to Read",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "books": undefined,
+                  "defineStatus": [Function],
+                  "empty": false,
+                  "title": "Read",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                className="add-contact"
+                replace={false}
+                to="/search"
+>
+                <WithStyles(Button)
+                                aria-label="Close"
+                                style={
+                                                Object {
+                                                                "backgroundColor": "#fff",
+                                                                "bottom": 20,
+                                                                "position": "fixed",
+                                                                "right": 20,
+                                                              }
+                                }
+                                variant="fab"
+                >
+                                <pure(AddIcon) />
+                </WithStyles(Button)>
+</Link>,
+              "container": true,
+              "item": true,
+              "justify": "flex-end",
+              "style": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(Button)
+                  aria-label="Close"
+                  style={
+                                    Object {
+                                                      "backgroundColor": "#fff",
+                                                      "bottom": 20,
+                                                      "position": "fixed",
+                                                      "right": 20,
+                                                    }
+                  }
+                  variant="fab"
+>
+                  <pure(AddIcon) />
+</WithStyles(Button)>,
+                "className": "add-contact",
+                "replace": false,
+                "to": "/search",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "aria-label": "Close",
+                  "children": <pure(AddIcon) />,
+                  "style": Object {
+                    "backgroundColor": "#fff",
+                    "bottom": 20,
+                    "position": "fixed",
+                    "right": 20,
+                  },
+                  "variant": "fab",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <If
+            test={false}
+>
+            <Loader />
+</If>,
+          <If
+            test={true}
+>
+            <WithStyles(Grid)
+                        item={true}
+                        style={undefined}
+            >
+                        <BookCase
+                                    books={undefined}
+                                    defineStatus={[Function]}
+                                    empty={false}
+                                    title="Currently Reading"
+                        />
+                        <BookCase
+                                    books={undefined}
+                                    defineStatus={[Function]}
+                                    empty={false}
+                                    title="Want to Read"
+                        />
+                        <BookCase
+                                    books={undefined}
+                                    defineStatus={[Function]}
+                                    empty={false}
+                                    title="Read"
+                        />
+            </WithStyles(Grid)>
+            <WithStyles(Grid)
+                        container={true}
+                        item={true}
+                        justify="flex-end"
+                        style={undefined}
+            >
+                        <Link
+                                    className="add-contact"
+                                    replace={false}
+                                    to="/search"
+                        >
+                                    <WithStyles(Button)
+                                                aria-label="Close"
+                                                style={
+                                                            Object {
+                                                                        "backgroundColor": "#fff",
+                                                                        "bottom": 20,
+                                                                        "position": "fixed",
+                                                                        "right": 20,
+                                                                      }
+                                                }
+                                                variant="fab"
+                                    >
+                                                <pure(AddIcon) />
+                                    </WithStyles(Button)>
+                        </Link>
+            </WithStyles(Grid)>
+</If>,
+        ],
+        "container": true,
+        "style": Object {
+          "backgroundColor": "#605872",
+          "padding": 20,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <Loader />,
+            "test": false,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Grid)
+                item={true}
+                style={undefined}
+>
+                <BookCase
+                                books={undefined}
+                                defineStatus={[Function]}
+                                empty={false}
+                                title="Currently Reading"
+                />
+                <BookCase
+                                books={undefined}
+                                defineStatus={[Function]}
+                                empty={false}
+                                title="Want to Read"
+                />
+                <BookCase
+                                books={undefined}
+                                defineStatus={[Function]}
+                                empty={false}
+                                title="Read"
+                />
+</WithStyles(Grid)>,
+              <WithStyles(Grid)
+                container={true}
+                item={true}
+                justify="flex-end"
+                style={undefined}
+>
+                <Link
+                                className="add-contact"
+                                replace={false}
+                                to="/search"
+                >
+                                <WithStyles(Button)
+                                                aria-label="Close"
+                                                style={
+                                                                Object {
+                                                                                "backgroundColor": "#fff",
+                                                                                "bottom": 20,
+                                                                                "position": "fixed",
+                                                                                "right": 20,
+                                                                              }
+                                                }
+                                                variant="fab"
+                                >
+                                                <pure(AddIcon) />
+                                </WithStyles(Button)>
+                </Link>
+</WithStyles(Grid)>,
+            ],
+            "test": true,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <BookCase
+                    books={undefined}
+                    defineStatus={[Function]}
+                    empty={false}
+                    title="Currently Reading"
+/>,
+                  <BookCase
+                    books={undefined}
+                    defineStatus={[Function]}
+                    empty={false}
+                    title="Want to Read"
+/>,
+                  <BookCase
+                    books={undefined}
+                    defineStatus={[Function]}
+                    empty={false}
+                    title="Read"
+/>,
+                ],
+                "item": true,
+                "style": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "books": undefined,
+                    "defineStatus": [Function],
+                    "empty": false,
+                    "title": "Currently Reading",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "books": undefined,
+                    "defineStatus": [Function],
+                    "empty": false,
+                    "title": "Want to Read",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "books": undefined,
+                    "defineStatus": [Function],
+                    "empty": false,
+                    "title": "Read",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Link
+                  className="add-contact"
+                  replace={false}
+                  to="/search"
+>
+                  <WithStyles(Button)
+                                    aria-label="Close"
+                                    style={
+                                                      Object {
+                                                                        "backgroundColor": "#fff",
+                                                                        "bottom": 20,
+                                                                        "position": "fixed",
+                                                                        "right": 20,
+                                                                      }
+                                    }
+                                    variant="fab"
+                  >
+                                    <pure(AddIcon) />
+                  </WithStyles(Button)>
+</Link>,
+                "container": true,
+                "item": true,
+                "justify": "flex-end",
+                "style": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(Button)
+                    aria-label="Close"
+                    style={
+                                        Object {
+                                                            "backgroundColor": "#fff",
+                                                            "bottom": 20,
+                                                            "position": "fixed",
+                                                            "right": 20,
+                                                          }
+                    }
+                    variant="fab"
+>
+                    <pure(AddIcon) />
+</WithStyles(Button)>,
+                  "className": "add-contact",
+                  "replace": false,
+                  "to": "/search",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "aria-label": "Close",
+                    "children": <pure(AddIcon) />,
+                    "style": Object {
+                      "backgroundColor": "#fff",
+                      "bottom": 20,
+                      "position": "fixed",
+                      "right": 20,
+                    },
+                    "variant": "fab",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

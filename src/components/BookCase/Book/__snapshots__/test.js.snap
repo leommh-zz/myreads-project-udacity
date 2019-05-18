@@ -1,0 +1,1126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] Book Display Book Component with props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Book
+    data={
+        Object {
+            "authors": Array [
+              "Leonardo Morini",
+            ],
+            "averageRating": 2,
+            "categories": Array [
+              "action",
+            ],
+            "description": "This book and the table",
+            "shelf": "",
+            "title": "Title Book",
+          }
+    }
+    defineStatus={[Function]}
+    toggleDrawer={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WithStyles(Card)
+          style={
+                    Object {
+                              "backgroundColor": "#12071d",
+                              "color": "#fff",
+                            }
+          }
+>
+          <WithStyles(CardActionArea)
+                    onClick={[Function]}
+                    style={undefined}
+          >
+                    <WithStyles(Grid)
+                              alignItems="center"
+                              container={true}
+                              direction="row"
+                              justify="center"
+                    >
+                              <WithStyles(Grid)
+                                        item={true}
+                              >
+                                        <BookImage
+                                                  images={undefined}
+                                        />
+                              </WithStyles(Grid)>
+                              <WithStyles(Grid)
+                                        item={true}
+                                        style={
+                                                  Object {
+                                                            "flexDirection": "column",
+                                                          }
+                                        }
+                              >
+                                        <WithStyles(CardContent)
+                                                  style={
+                                                            Object {
+                                                                      "flex": 1,
+                                                                      "flexWrap": "wrap",
+                                                                    }
+                                                  }
+                                        >
+                                                  <WithStyles(Typography)
+                                                            noWrap={true}
+                                                            style={
+                                                                      Object {
+                                                                                "color": "#fff",
+                                                                                "maxWidth": 200,
+                                                                              }
+                                                            }
+                                                            variant="h6"
+                                                  >
+                                                            Title Book
+                                                  </WithStyles(Typography)>
+                                                  <ReactStars
+                                                            char="★"
+                                                            color1="gray"
+                                                            color2="#ffd700"
+                                                            count={5}
+                                                            edit={false}
+                                                            half={true}
+                                                            onChange={[Function]}
+                                                            size={25}
+                                                            value={2}
+                                                  />
+                                                  <MultiChips
+                                                            items={
+                                                                      Array [
+                                                                                "action",
+                                                                              ]
+                                                            }
+                                                            name="Categories"
+                                                  />
+                                        </WithStyles(CardContent)>
+                              </WithStyles(Grid)>
+                    </WithStyles(Grid)>
+          </WithStyles(CardActionArea)>
+</WithStyles(Card)>,
+        <BookDrawer
+          data={
+                    Object {
+                              "authors": Array [
+                                "Leonardo Morini",
+                              ],
+                              "averageRating": 2,
+                              "categories": Array [
+                                "action",
+                              ],
+                              "description": "This book and the table",
+                              "shelf": "",
+                              "title": "Title Book",
+                            }
+          }
+          defineStatus={[Function]}
+          stateDrawer={false}
+          toggleDrawer={[Function]}
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <WithStyles(CardActionArea)
+            onClick={[Function]}
+            style={undefined}
+>
+            <WithStyles(Grid)
+                        alignItems="center"
+                        container={true}
+                        direction="row"
+                        justify="center"
+            >
+                        <WithStyles(Grid)
+                                    item={true}
+                        >
+                                    <BookImage
+                                                images={undefined}
+                                    />
+                        </WithStyles(Grid)>
+                        <WithStyles(Grid)
+                                    item={true}
+                                    style={
+                                                Object {
+                                                            "flexDirection": "column",
+                                                          }
+                                    }
+                        >
+                                    <WithStyles(CardContent)
+                                                style={
+                                                            Object {
+                                                                        "flex": 1,
+                                                                        "flexWrap": "wrap",
+                                                                      }
+                                                }
+                                    >
+                                                <WithStyles(Typography)
+                                                            noWrap={true}
+                                                            style={
+                                                                        Object {
+                                                                                    "color": "#fff",
+                                                                                    "maxWidth": 200,
+                                                                                  }
+                                                            }
+                                                            variant="h6"
+                                                >
+                                                            Title Book
+                                                </WithStyles(Typography)>
+                                                <ReactStars
+                                                            char="★"
+                                                            color1="gray"
+                                                            color2="#ffd700"
+                                                            count={5}
+                                                            edit={false}
+                                                            half={true}
+                                                            onChange={[Function]}
+                                                            size={25}
+                                                            value={2}
+                                                />
+                                                <MultiChips
+                                                            items={
+                                                                        Array [
+                                                                                    "action",
+                                                                                  ]
+                                                            }
+                                                            name="Categories"
+                                                />
+                                    </WithStyles(CardContent)>
+                        </WithStyles(Grid)>
+            </WithStyles(Grid)>
+</WithStyles(CardActionArea)>,
+          "style": Object {
+            "backgroundColor": "#12071d",
+            "color": "#fff",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(Grid)
+              alignItems="center"
+              container={true}
+              direction="row"
+              justify="center"
+>
+              <WithStyles(Grid)
+                            item={true}
+              >
+                            <BookImage
+                                          images={undefined}
+                            />
+              </WithStyles(Grid)>
+              <WithStyles(Grid)
+                            item={true}
+                            style={
+                                          Object {
+                                                        "flexDirection": "column",
+                                                      }
+                            }
+              >
+                            <WithStyles(CardContent)
+                                          style={
+                                                        Object {
+                                                                      "flex": 1,
+                                                                      "flexWrap": "wrap",
+                                                                    }
+                                          }
+                            >
+                                          <WithStyles(Typography)
+                                                        noWrap={true}
+                                                        style={
+                                                                      Object {
+                                                                                    "color": "#fff",
+                                                                                    "maxWidth": 200,
+                                                                                  }
+                                                        }
+                                                        variant="h6"
+                                          >
+                                                        Title Book
+                                          </WithStyles(Typography)>
+                                          <ReactStars
+                                                        char="★"
+                                                        color1="gray"
+                                                        color2="#ffd700"
+                                                        count={5}
+                                                        edit={false}
+                                                        half={true}
+                                                        onChange={[Function]}
+                                                        size={25}
+                                                        value={2}
+                                          />
+                                          <MultiChips
+                                                        items={
+                                                                      Array [
+                                                                                    "action",
+                                                                                  ]
+                                                        }
+                                                        name="Categories"
+                                          />
+                            </WithStyles(CardContent)>
+              </WithStyles(Grid)>
+</WithStyles(Grid)>,
+            "onClick": [Function],
+            "style": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "alignItems": "center",
+              "children": Array [
+                <WithStyles(Grid)
+                  item={true}
+>
+                  <BookImage
+                                    images={undefined}
+                  />
+</WithStyles(Grid)>,
+                <WithStyles(Grid)
+                  item={true}
+                  style={
+                                    Object {
+                                                      "flexDirection": "column",
+                                                    }
+                  }
+>
+                  <WithStyles(CardContent)
+                                    style={
+                                                      Object {
+                                                                        "flex": 1,
+                                                                        "flexWrap": "wrap",
+                                                                      }
+                                    }
+                  >
+                                    <WithStyles(Typography)
+                                                      noWrap={true}
+                                                      style={
+                                                                        Object {
+                                                                                          "color": "#fff",
+                                                                                          "maxWidth": 200,
+                                                                                        }
+                                                      }
+                                                      variant="h6"
+                                    >
+                                                      Title Book
+                                    </WithStyles(Typography)>
+                                    <ReactStars
+                                                      char="★"
+                                                      color1="gray"
+                                                      color2="#ffd700"
+                                                      count={5}
+                                                      edit={false}
+                                                      half={true}
+                                                      onChange={[Function]}
+                                                      size={25}
+                                                      value={2}
+                                    />
+                                    <MultiChips
+                                                      items={
+                                                                        Array [
+                                                                                          "action",
+                                                                                        ]
+                                                      }
+                                                      name="Categories"
+                                    />
+                  </WithStyles(CardContent)>
+</WithStyles(Grid)>,
+              ],
+              "container": true,
+              "direction": "row",
+              "justify": "center",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <BookImage
+                    images={undefined}
+/>,
+                  "item": true,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "images": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(CardContent)
+                    style={
+                                        Object {
+                                                            "flex": 1,
+                                                            "flexWrap": "wrap",
+                                                          }
+                    }
+>
+                    <WithStyles(Typography)
+                                        noWrap={true}
+                                        style={
+                                                            Object {
+                                                                                "color": "#fff",
+                                                                                "maxWidth": 200,
+                                                                              }
+                                        }
+                                        variant="h6"
+                    >
+                                        Title Book
+                    </WithStyles(Typography)>
+                    <ReactStars
+                                        char="★"
+                                        color1="gray"
+                                        color2="#ffd700"
+                                        count={5}
+                                        edit={false}
+                                        half={true}
+                                        onChange={[Function]}
+                                        size={25}
+                                        value={2}
+                    />
+                    <MultiChips
+                                        items={
+                                                            Array [
+                                                                                "action",
+                                                                              ]
+                                        }
+                                        name="Categories"
+                    />
+</WithStyles(CardContent)>,
+                  "item": true,
+                  "style": Object {
+                    "flexDirection": "column",
+                  },
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <WithStyles(Typography)
+                        noWrap={true}
+                        style={
+                                                Object {
+                                                                        "color": "#fff",
+                                                                        "maxWidth": 200,
+                                                                      }
+                        }
+                        variant="h6"
+>
+                        Title Book
+</WithStyles(Typography)>,
+                      <ReactStars
+                        char="★"
+                        color1="gray"
+                        color2="#ffd700"
+                        count={5}
+                        edit={false}
+                        half={true}
+                        onChange={[Function]}
+                        size={25}
+                        value={2}
+/>,
+                      <MultiChips
+                        items={
+                                                Array [
+                                                                        "action",
+                                                                      ]
+                        }
+                        name="Categories"
+/>,
+                    ],
+                    "style": Object {
+                      "flex": 1,
+                      "flexWrap": "wrap",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Title Book",
+                        "noWrap": true,
+                        "style": Object {
+                          "color": "#fff",
+                          "maxWidth": 200,
+                        },
+                        "variant": "h6",
+                      },
+                      "ref": null,
+                      "rendered": "Title Book",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "char": "★",
+                        "color1": "gray",
+                        "color2": "#ffd700",
+                        "count": 5,
+                        "edit": false,
+                        "half": true,
+                        "onChange": [Function],
+                        "size": 25,
+                        "value": 2,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "items": Array [
+                          "action",
+                        ],
+                        "name": "Categories",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "data": Object {
+            "authors": Array [
+              "Leonardo Morini",
+            ],
+            "averageRating": 2,
+            "categories": Array [
+              "action",
+            ],
+            "description": "This book and the table",
+            "shelf": "",
+            "title": "Title Book",
+          },
+          "defineStatus": [Function],
+          "stateDrawer": false,
+          "toggleDrawer": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WithStyles(Card)
+            style={
+                        Object {
+                                    "backgroundColor": "#12071d",
+                                    "color": "#fff",
+                                  }
+            }
+>
+            <WithStyles(CardActionArea)
+                        onClick={[Function]}
+                        style={undefined}
+            >
+                        <WithStyles(Grid)
+                                    alignItems="center"
+                                    container={true}
+                                    direction="row"
+                                    justify="center"
+                        >
+                                    <WithStyles(Grid)
+                                                item={true}
+                                    >
+                                                <BookImage
+                                                            images={undefined}
+                                                />
+                                    </WithStyles(Grid)>
+                                    <WithStyles(Grid)
+                                                item={true}
+                                                style={
+                                                            Object {
+                                                                        "flexDirection": "column",
+                                                                      }
+                                                }
+                                    >
+                                                <WithStyles(CardContent)
+                                                            style={
+                                                                        Object {
+                                                                                    "flex": 1,
+                                                                                    "flexWrap": "wrap",
+                                                                                  }
+                                                            }
+                                                >
+                                                            <WithStyles(Typography)
+                                                                        noWrap={true}
+                                                                        style={
+                                                                                    Object {
+                                                                                                "color": "#fff",
+                                                                                                "maxWidth": 200,
+                                                                                              }
+                                                                        }
+                                                                        variant="h6"
+                                                            >
+                                                                        Title Book
+                                                            </WithStyles(Typography)>
+                                                            <ReactStars
+                                                                        char="★"
+                                                                        color1="gray"
+                                                                        color2="#ffd700"
+                                                                        count={5}
+                                                                        edit={false}
+                                                                        half={true}
+                                                                        onChange={[Function]}
+                                                                        size={25}
+                                                                        value={2}
+                                                            />
+                                                            <MultiChips
+                                                                        items={
+                                                                                    Array [
+                                                                                                "action",
+                                                                                              ]
+                                                                        }
+                                                                        name="Categories"
+                                                            />
+                                                </WithStyles(CardContent)>
+                                    </WithStyles(Grid)>
+                        </WithStyles(Grid)>
+            </WithStyles(CardActionArea)>
+</WithStyles(Card)>,
+          <BookDrawer
+            data={
+                        Object {
+                                    "authors": Array [
+                                      "Leonardo Morini",
+                                    ],
+                                    "averageRating": 2,
+                                    "categories": Array [
+                                      "action",
+                                    ],
+                                    "description": "This book and the table",
+                                    "shelf": "",
+                                    "title": "Title Book",
+                                  }
+            }
+            defineStatus={[Function]}
+            stateDrawer={false}
+            toggleDrawer={[Function]}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(CardActionArea)
+              onClick={[Function]}
+              style={undefined}
+>
+              <WithStyles(Grid)
+                            alignItems="center"
+                            container={true}
+                            direction="row"
+                            justify="center"
+              >
+                            <WithStyles(Grid)
+                                          item={true}
+                            >
+                                          <BookImage
+                                                        images={undefined}
+                                          />
+                            </WithStyles(Grid)>
+                            <WithStyles(Grid)
+                                          item={true}
+                                          style={
+                                                        Object {
+                                                                      "flexDirection": "column",
+                                                                    }
+                                          }
+                            >
+                                          <WithStyles(CardContent)
+                                                        style={
+                                                                      Object {
+                                                                                    "flex": 1,
+                                                                                    "flexWrap": "wrap",
+                                                                                  }
+                                                        }
+                                          >
+                                                        <WithStyles(Typography)
+                                                                      noWrap={true}
+                                                                      style={
+                                                                                    Object {
+                                                                                                  "color": "#fff",
+                                                                                                  "maxWidth": 200,
+                                                                                                }
+                                                                      }
+                                                                      variant="h6"
+                                                        >
+                                                                      Title Book
+                                                        </WithStyles(Typography)>
+                                                        <ReactStars
+                                                                      char="★"
+                                                                      color1="gray"
+                                                                      color2="#ffd700"
+                                                                      count={5}
+                                                                      edit={false}
+                                                                      half={true}
+                                                                      onChange={[Function]}
+                                                                      size={25}
+                                                                      value={2}
+                                                        />
+                                                        <MultiChips
+                                                                      items={
+                                                                                    Array [
+                                                                                                  "action",
+                                                                                                ]
+                                                                      }
+                                                                      name="Categories"
+                                                        />
+                                          </WithStyles(CardContent)>
+                            </WithStyles(Grid)>
+              </WithStyles(Grid)>
+</WithStyles(CardActionArea)>,
+            "style": Object {
+              "backgroundColor": "#12071d",
+              "color": "#fff",
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <WithStyles(Grid)
+                alignItems="center"
+                container={true}
+                direction="row"
+                justify="center"
+>
+                <WithStyles(Grid)
+                                item={true}
+                >
+                                <BookImage
+                                                images={undefined}
+                                />
+                </WithStyles(Grid)>
+                <WithStyles(Grid)
+                                item={true}
+                                style={
+                                                Object {
+                                                                "flexDirection": "column",
+                                                              }
+                                }
+                >
+                                <WithStyles(CardContent)
+                                                style={
+                                                                Object {
+                                                                                "flex": 1,
+                                                                                "flexWrap": "wrap",
+                                                                              }
+                                                }
+                                >
+                                                <WithStyles(Typography)
+                                                                noWrap={true}
+                                                                style={
+                                                                                Object {
+                                                                                                "color": "#fff",
+                                                                                                "maxWidth": 200,
+                                                                                              }
+                                                                }
+                                                                variant="h6"
+                                                >
+                                                                Title Book
+                                                </WithStyles(Typography)>
+                                                <ReactStars
+                                                                char="★"
+                                                                color1="gray"
+                                                                color2="#ffd700"
+                                                                count={5}
+                                                                edit={false}
+                                                                half={true}
+                                                                onChange={[Function]}
+                                                                size={25}
+                                                                value={2}
+                                                />
+                                                <MultiChips
+                                                                items={
+                                                                                Array [
+                                                                                                "action",
+                                                                                              ]
+                                                                }
+                                                                name="Categories"
+                                                />
+                                </WithStyles(CardContent)>
+                </WithStyles(Grid)>
+</WithStyles(Grid)>,
+              "onClick": [Function],
+              "style": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "alignItems": "center",
+                "children": Array [
+                  <WithStyles(Grid)
+                    item={true}
+>
+                    <BookImage
+                                        images={undefined}
+                    />
+</WithStyles(Grid)>,
+                  <WithStyles(Grid)
+                    item={true}
+                    style={
+                                        Object {
+                                                            "flexDirection": "column",
+                                                          }
+                    }
+>
+                    <WithStyles(CardContent)
+                                        style={
+                                                            Object {
+                                                                                "flex": 1,
+                                                                                "flexWrap": "wrap",
+                                                                              }
+                                        }
+                    >
+                                        <WithStyles(Typography)
+                                                            noWrap={true}
+                                                            style={
+                                                                                Object {
+                                                                                                    "color": "#fff",
+                                                                                                    "maxWidth": 200,
+                                                                                                  }
+                                                            }
+                                                            variant="h6"
+                                        >
+                                                            Title Book
+                                        </WithStyles(Typography)>
+                                        <ReactStars
+                                                            char="★"
+                                                            color1="gray"
+                                                            color2="#ffd700"
+                                                            count={5}
+                                                            edit={false}
+                                                            half={true}
+                                                            onChange={[Function]}
+                                                            size={25}
+                                                            value={2}
+                                        />
+                                        <MultiChips
+                                                            items={
+                                                                                Array [
+                                                                                                    "action",
+                                                                                                  ]
+                                                            }
+                                                            name="Categories"
+                                        />
+                    </WithStyles(CardContent)>
+</WithStyles(Grid)>,
+                ],
+                "container": true,
+                "direction": "row",
+                "justify": "center",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <BookImage
+                      images={undefined}
+/>,
+                    "item": true,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "images": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <WithStyles(CardContent)
+                      style={
+                                            Object {
+                                                                  "flex": 1,
+                                                                  "flexWrap": "wrap",
+                                                                }
+                      }
+>
+                      <WithStyles(Typography)
+                                            noWrap={true}
+                                            style={
+                                                                  Object {
+                                                                                        "color": "#fff",
+                                                                                        "maxWidth": 200,
+                                                                                      }
+                                            }
+                                            variant="h6"
+                      >
+                                            Title Book
+                      </WithStyles(Typography)>
+                      <ReactStars
+                                            char="★"
+                                            color1="gray"
+                                            color2="#ffd700"
+                                            count={5}
+                                            edit={false}
+                                            half={true}
+                                            onChange={[Function]}
+                                            size={25}
+                                            value={2}
+                      />
+                      <MultiChips
+                                            items={
+                                                                  Array [
+                                                                                        "action",
+                                                                                      ]
+                                            }
+                                            name="Categories"
+                      />
+</WithStyles(CardContent)>,
+                    "item": true,
+                    "style": Object {
+                      "flexDirection": "column",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": Array [
+                        <WithStyles(Typography)
+                          noWrap={true}
+                          style={
+                                                    Object {
+                                                                              "color": "#fff",
+                                                                              "maxWidth": 200,
+                                                                            }
+                          }
+                          variant="h6"
+>
+                          Title Book
+</WithStyles(Typography)>,
+                        <ReactStars
+                          char="★"
+                          color1="gray"
+                          color2="#ffd700"
+                          count={5}
+                          edit={false}
+                          half={true}
+                          onChange={[Function]}
+                          size={25}
+                          value={2}
+/>,
+                        <MultiChips
+                          items={
+                                                    Array [
+                                                                              "action",
+                                                                            ]
+                          }
+                          name="Categories"
+/>,
+                      ],
+                      "style": Object {
+                        "flex": 1,
+                        "flexWrap": "wrap",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Title Book",
+                          "noWrap": true,
+                          "style": Object {
+                            "color": "#fff",
+                            "maxWidth": 200,
+                          },
+                          "variant": "h6",
+                        },
+                        "ref": null,
+                        "rendered": "Title Book",
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "char": "★",
+                          "color1": "gray",
+                          "color2": "#ffd700",
+                          "count": 5,
+                          "edit": false,
+                          "half": true,
+                          "onChange": [Function],
+                          "size": 25,
+                          "value": 2,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "items": Array [
+                            "action",
+                          ],
+                          "name": "Categories",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "data": Object {
+              "authors": Array [
+                "Leonardo Morini",
+              ],
+              "averageRating": 2,
+              "categories": Array [
+                "action",
+              ],
+              "description": "This book and the table",
+              "shelf": "",
+              "title": "Title Book",
+            },
+            "defineStatus": [Function],
+            "stateDrawer": false,
+            "toggleDrawer": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
